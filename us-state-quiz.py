@@ -54,18 +54,6 @@ states_and_capitals = {
         "Wyoming": {"Capital": "Cheyenne", "Flower": "Indian Paintbrush", "Bird": "Western Meadowlark", "Date Added": "1890", "Electoral Votes": 3, "Statehood Rank": 44}
     }
 
-
-  import random
-
-def states_capitals_quiz():
-    states_and_capitals = {
-        "Alabama": {"Capital": "Montgomery", "Flower": "Camellia", "Bird": "Yellowhammer", "Date Added": "1819", "Electoral Votes": 9, "Statehood Rank": 22},
-        "Alaska": {"Capital": "Juneau", "Flower": "Forget-me-not", "Bird": "Willow Ptarmigan", "Date Added": "1959", "Electoral Votes": 3, "Statehood Rank": 49},
-        "Arizona": {"Capital": "Phoenix", "Flower": "Saguaro Cactus Blossom", "Bird": "Cactus Wren", "Date Added": "1912", "Electoral Votes": 11, "Statehood Rank": 48},
-        # (Add similar entries for all 50 states as shown in your request)
-        "Wyoming": {"Capital": "Cheyenne", "Flower": "Indian Paintbrush", "Bird": "Western Meadowlark", "Date Added": "1890", "Electoral Votes": 3, "Statehood Rank": 44}
-    }
-
     score = 0
     print("\nWelcome to the States and Capitals Quiz!")
     print("You will be given 10 questions. Try to match states with their capitals or vice versa.\n")
@@ -109,5 +97,5 @@ def states_capitals_quiz():
     else:
         print("Keep practicing! You'll get there.")
 
-# To play the quiz, call the function:
+# Call the function to run the quiz
 states_capitals_quiz()
