@@ -64,19 +64,19 @@ set score=0
 :: Loop through 10 random questions
 for /L %%i in (1,1,10) do (
     set /a index=!random! %% 50
-    for /f "tokens=1-7 delims=|" %%A in ("!states[!index!]!") do (
-        set "state=%%A"
-        set "capital=%%B"
-        set "flower=%%C"
-        set "bird=%%D"
-        set "date_added=%%E"
-        set "electoral_votes=%%F"
-        set "statehood_rank=%%G"
+    for /f "tokens=1-7 delims=|" %%A in ("!states[%%i]!") do (
+        set state=%%A
+        set capital=%%B
+        set flower=%%C
+        set bird=%%D
+        set date_added=%%E
+        set electoral_votes=%%F
+        set statehood_rank=%%G
     )
 
     set /a type=!random! %% 2
     if !type! equ 0 (
-        echo What is the capital of !state!?
+        echo What is the capital of !state!? 
         set /p answer=Your answer: 
         if /i "!answer!"=="!capital!" (
             echo Correct!
